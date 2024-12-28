@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء اختبار</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>إنشاء اختبار جديد</h1>
+        <form id="quizForm">
+            <input type="text" id="quizTitle" placeholder="عنوان الاختبار" required>
+            <input type="password" id="quizPassword" placeholder="كلمة مرور الاختبار" required>
+            <input type="number" id="quizTime" placeholder="مدة الاختبار (بالدقائق)" required>
+            <label>
+                <input type="checkbox" id="allowRetake"> السماح بإعادة دخول الاختبار
+            </label>
+            <div id="questionsContainer"></div>
+            <button type="button" id="addQuestion">إضافة سؤال</button>
+            <button type="submit">إنشاء اختبار</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
